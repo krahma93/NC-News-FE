@@ -20,15 +20,15 @@ const Comments = () => {
           <h1>Comments:</h1>
             {comments.map((comment) => {
                 return (
-                    <div className="SingleItem">
-                     <p>{comment.body}
+                    <section key={comment.comment_id} className="SingleItem">
+                     <p>{comment.body}</p>
                      <li>
                         <p> Votes: {comment.votes} | 
                         Author: {comment.author} | 
                         Created At: {comment.created_at.slice(0, 10)}</p>
                      </li>
-                     </p>
-                </div>
+                     
+                </section>
                     
                 )
             })}
