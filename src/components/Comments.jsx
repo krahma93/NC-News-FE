@@ -22,6 +22,11 @@ const Comments = () => {
                 return (
                     <div className="SingleItem">
                      <p>{comment.body}
+                     <li>
+                        <p> Votes: {comment.votes} | 
+                        Author: {comment.author} | 
+                        Created At: {comment.created_at.slice(0, 10)}</p>
+                     </li>
                      </p>
                 </div>
                     

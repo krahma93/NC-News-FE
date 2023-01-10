@@ -6,7 +6,7 @@ const Nav = () => {
     return(
         <nav className='nav'>
     <Link to="/" className="Users-link">
-        All Articles
+        Articles
       </Link>
 
         </nav>

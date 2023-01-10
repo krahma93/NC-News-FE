@@ -23,7 +23,7 @@ if (isLoading) {
 return (
 
     <main className="AllArt">
-      <h2>All Articles</h2>
+      <h2>Articles</h2>
       <ul className="AllArt">
         {articles.map((article) => {
           return ( 
