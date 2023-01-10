@@ -2,6 +2,8 @@ import { getSingleArticle } from "../api";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import Comments from "./Comments";
+
 
 const SingleArticle = () => {
   const { article_id } = useParams();
@@ -16,7 +18,7 @@ const SingleArticle = () => {
   // const{item_name} =item
 
   return (
-    <main>
+      <main>
       <ul className="SingleItem">
         <h2>{article.title}</h2>
         <h3> Description: {article.body}</h3>
@@ -26,6 +28,8 @@ const SingleArticle = () => {
                     <p>Comment count: {article.comment_count}</p> 
                     <p> Created on: {article.created_at}</p>
       </ul>
+      <Comments setSingleArticle={setSingleArticle}/>
+
     </main>
   );
 };

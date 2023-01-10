@@ -5,7 +5,7 @@ import Nav from "./components/Nav"
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import SingleArticle from "./components/SingleArticle"
-
+import Comments from './components/Comments';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Route>
           <Route path="/" element={<AllArticles />} />
           <Route path="/articles/:article_id" element={<SingleArticle />} />
+          <Route path="/comments/:article_id" element={<Comments />} />
         </Route>
       </Routes>
 
