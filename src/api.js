@@ -21,3 +21,10 @@ export const getComments = (article_id) => {
         return res.data.comments
     })
 }
+
+export const patchUpVote = (article_id, increment) => {
+    return marketApi.patch(`/articles/${article_id}`, {
+        inc_votes: increment,
+    })
+    
+}

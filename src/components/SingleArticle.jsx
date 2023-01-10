@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "./Comments";
+import UpVote from "./UpVote";
 
 
 const SingleArticle = () => {
@@ -17,6 +18,7 @@ const SingleArticle = () => {
 
   // const{item_name} =item
 
+
   return (
       <main>
       <ul className="SingleItem">
@@ -24,10 +26,11 @@ const SingleArticle = () => {
         <h3> Description: {article.body}</h3>
                     <p>Topic: {article.topic}</p>
                     <p>Author: {article.author}</p>
-                    <p>Votes: {article.votes}</p>
-                    <p>Comment count: {article.comment_count}</p> 
+                    
+                    {/* <p>Comment count: {article.comment_count}</p>  */}
                     <p> Created on: {article.created_at}</p>
       </ul>
+      <UpVote votes={article.votes} article_id={article_id}/>
       <Comments setSingleArticle={setSingleArticle}/>
 
     </main>
