@@ -4,7 +4,7 @@ import AllArticles from "./components/AllArticles"
 import Nav from "./components/Nav"
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
-
+import SingleArticle from "./components/SingleArticle"
 
 
 
@@ -22,6 +22,7 @@ function App() {
       <Routes>
         <Route>
           <Route path="/" element={<AllArticles />} />
+          <Route path="/articles/:article_id" element={<SingleArticle />} />
         </Route>
       </Routes>
 

@@ -9,3 +9,9 @@ export const getArticles = ( )=> {
         return res.data.articles
     })
 }
+
+export const getSingleArticle = (article_id) => {
+    return marketApi.get(`/articles/${article_id}`).then((res) => {
+        return res.data.article
+    })
+}
