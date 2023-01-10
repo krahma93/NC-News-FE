@@ -15,3 +15,9 @@ export const getSingleArticle = (article_id) => {
         return res.data.article
     })
 }
+
+export const getComments = (article_id) => {
+    return marketApi.get(`/articles/${article_id}/comments`).then((res) => {
+        return res.data.comments
+    })
+}
