@@ -28,3 +28,11 @@ export const patchUpVote = (article_id, increment) => {
     })
     
 }
+
+export const postComment = (article_id, comment) => { 
+    console.log(article_id)
+   
+    return marketApi.post(`/articles/${article_id}/comments`, comment).then((res) => {
+        return res.data.comment
+    })
+}

@@ -76,3 +76,20 @@
   margin-bottom: 33px;
   
   }
+  .vote {
+    border: 1px solid black;
+  width: 300px;
+  padding-left: 0px;
+  border-radius: 5px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fca6a6;
+  padding: 0px;
+  font-size: larger;
+  margin-top: 33px;
+  margin-bottom: 33px;
+  padding-bottom: 33px;
+  
+  }
