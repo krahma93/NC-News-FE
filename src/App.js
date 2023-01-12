@@ -22,6 +22,7 @@ function App() {
         <Route>
           <Route path="/" element={<AllArticles />} />
           <Route path="/articles/:article_id" element={<SingleArticle />} />
+          <Route path="/topics/:slug" element={<AllArticles />} />
         </Route>
       </Routes>
 

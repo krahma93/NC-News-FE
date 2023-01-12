@@ -1,4 +1,4 @@
-import { getComments } from "../api";
+import { getComments, getUsers } from "../api";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";

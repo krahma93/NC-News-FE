@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { postComment } from "../api";
 
-const AddComment = ({ article_id, setComments }) => {
-  const [newAuthor, setNewAuthor] = useState("");
+
+
+const AddComment = ({ article_id, setComments, }) => {
   const [newBody, setNewbody] = useState("")
     const [error, setErr] = useState(null)
-  
+
+   
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const newComment = {
-        author: newAuthor,
+        author: `jessjelly`,
         body: newBody,
-        username: newAuthor,
+        username: `jessjelly`,
         votes: 0,
         article_id: {article_id},
         created_at: String(new Date()),
@@ -41,6 +43,7 @@ const AddComment = ({ article_id, setComments }) => {
   }
 
 
+
 if (error) {
     return (
         <main>
@@ -54,21 +57,21 @@ return (
     
     <form onSubmit={handleSubmit}> 
     <section>
-    <label htmlFor="newAuthor"> Author Name
+    {/* <label htmlFor="newAuthor"> Author Name
     <input id="newAuthor"
     type="text"
     value={newAuthor}
     onChange={(e)=> setNewAuthor(e.target.value)}></input>
-    </label>
+    </label> */}
     </section>
 <section>
 
 
     <label htmlFor="newBody"> Add comment here:
-    <input id="newBody"
+    <textarea id="newBody"
     type="text"
     value={newBody}
-    onChange={(e)=> setNewbody(e.target.value)}></input>
+    onChange={(e)=> setNewbody(e.target.value)}></textarea>
     </label>
     </section>
 
