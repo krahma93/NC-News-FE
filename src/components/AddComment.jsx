@@ -59,14 +59,7 @@ if (error) {
 return (
     
     <form onSubmit={handleSubmit}> 
-    <section>
-    {/* <label htmlFor="newAuthor"> Author Name
-    <input id="newAuthor"
-    type="text"
-    value={newAuthor}
-    onChange={(e)=> setNewAuthor(e.target.value)}></input>
-    </label> */}
-    </section>
+
 <section>
 
 
