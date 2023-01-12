@@ -43,3 +43,7 @@ export const getTopics = () => {
         return res.data.topics
     })
 };
+
+export const deleteComment = (comment_id) => {
+    return marketApi.delete(`/comments/${comment_id}`)
+}

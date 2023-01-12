@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import AddComment from "./AddComment";
+import DeleteComment from "./DeleteComment";
 
 const Comments = () => {
   const { article_id } = useParams();
@@ -32,6 +33,7 @@ const Comments = () => {
                         Author: {comment.author} | 
                      Created At: {comment.created_at}
                        </p>
+                       <DeleteComment comment_id={comment.comment_id} author={comment.author} />
                      </li>
                      
                 </section>
