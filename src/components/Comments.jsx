@@ -33,7 +33,7 @@ const Comments = () => {
                         Author: {comment.author} | 
                      Created At: {comment.created_at}
                        </p>
-                       <DeleteComment comment_id={comment.comment_id} author={comment.author} />
+                       <DeleteComment comments={comments} setComments={setComments} comment_id={comment.comment_id} author={comment.author} />
                      </li>
                      
                 </section>
@@ -41,8 +41,6 @@ const Comments = () => {
                 )
             })}
                
-            
-     
 
       </div>
     </main>

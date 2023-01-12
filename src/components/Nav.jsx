@@ -8,6 +8,8 @@ const Nav = () => {
     <Link to="/" className="Users-link">
         Articles
       </Link>
+      <span> | </span>
+      <Link to='/LogIn' className="home">Log In</Link>
 
         </nav>
 

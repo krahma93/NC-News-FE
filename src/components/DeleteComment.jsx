@@ -1,14 +1,15 @@
 import { deleteComment } from "../api";
 
-const DeleteComment = ({comment_id, author}) => {
+const DeleteComment = ({comment_id, author,comments, setComments }) => {
 const loggedUser = "jessjelly"
-  // const [item_id, setItemId] = useState("");
 
 
 const handleSubmit = (e) => { 
   deleteComment(comment_id)
-  .then(() => { 
+  .then(() => {  
+    const filterComments = comments.filter((comm) => comm.comment_id !== comment_id)
     alert("your comment was deleted")
+    setComments(filterComments)
   })
 }
 
