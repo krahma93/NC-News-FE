@@ -21,7 +21,7 @@ const SingleArticle = () => {
 
   return (
       <main>
-      <ul className="SingleItem">
+      <ul className="SingleItems">
         <h2>{article.title}</h2>
         <h3> Description: {article.body}</h3>
                     <p>Topic: {article.topic}</p>

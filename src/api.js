@@ -4,9 +4,9 @@ const marketApi = axios.create({
     baseURL: 'https://kr-news-portfolio.onrender.com/api'
 })
 
-export const getArticles = (slug )=> {
+export const getArticles = (slug, sortBy, orderBy  )=> {
    return marketApi.get('/articles', {
-    params: {topic: slug,}
+    params: {topic: slug, sort_by: sortBy, order: orderBy}
    }).then((res) => {
         return res.data.articles
     })
