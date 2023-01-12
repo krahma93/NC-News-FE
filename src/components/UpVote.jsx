@@ -29,8 +29,8 @@ const UpVote = ({ votes, article_id }) => {
   }
 
   return (
-   <section>
-    <p>Vote {votes + voteChange}</p>
+   <section className="vote">
+    <p>Votes</p> <p> {votes + voteChange}</p>
     <button onClick={incVote}>Vote for this article</button>
     <button onClick={decVote}>Un Vote this article</button>
    </section>

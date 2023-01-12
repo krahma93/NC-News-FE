@@ -4,8 +4,10 @@ const marketApi = axios.create({
     baseURL: 'https://kr-news-portfolio.onrender.com/api'
 })
 
-export const getArticles = ( )=> {
-    return marketApi.get('/articles').then((res) => {
+export const getArticles = (slug )=> {
+   return marketApi.get('/articles', {
+    params: {topic: slug,}
+   }).then((res) => {
         return res.data.articles
     })
 }
@@ -28,3 +30,16 @@ export const patchUpVote = (article_id, increment) => {
     })
     
 }
+
+export const postComment = (article_id, comment) => { 
+   
+    return marketApi.post(`/articles/${article_id}/comments`, comment).then((res) => {
+        return res.data.comment
+    })
+}
+
+export const getTopics = () => {
+    return marketApi.get('/topics').then(res => {
+        return res.data.topics
+    })
+};
