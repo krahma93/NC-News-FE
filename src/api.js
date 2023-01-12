@@ -5,14 +5,11 @@ const marketApi = axios.create({
 })
 
 export const getArticles = (slug )=> {
-    if (slug) { return marketApi.get(`/articles?topic=${slug}`).then((res)=> 
-    {
-        return res.data.articles
-    })} else {
-    return marketApi.get('/articles').then((res) => {
+   return marketApi.get('/articles', {
+    params: {topic: slug,}
+   }).then((res) => {
         return res.data.articles
     })
-}
 }
 
 export const getSingleArticle = (article_id) => {
@@ -35,7 +32,6 @@ export const patchUpVote = (article_id, increment) => {
 }
 
 export const postComment = (article_id, comment) => { 
-    console.log(article_id)
    
     return marketApi.post(`/articles/${article_id}/comments`, comment).then((res) => {
         return res.data.comment
@@ -47,10 +43,3 @@ export const getTopics = () => {
         return res.data.topics
     })
 };
-
-// export const getSingleTopic = (slug) => {
-//     return marketApi.get(`/articles?topic=${slug}`).then((res)=> 
-//     {
-//         return res.data.articles
-//     })
-// }

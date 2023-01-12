@@ -11,6 +11,9 @@ const AddComment = ({ article_id, setComments, }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!newBody)  {
+        alert ("Please enter a comment in the field")
+    } else {
     const newComment = {
         author: `jessjelly`,
         body: newBody,
@@ -20,7 +23,7 @@ const AddComment = ({ article_id, setComments, }) => {
         created_at: String(new Date()),
         comment_id: new Date(),
     }
-
+    
     setComments((currComments) => {
          return   [ newComment, ...currComments
 
@@ -41,7 +44,7 @@ const AddComment = ({ article_id, setComments, }) => {
 
 })
   }
-
+}
 
 
 if (error) {
