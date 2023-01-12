@@ -1,4 +1,4 @@
-import { getComments, getUsers } from "../api";
+import { getComments, } from "../api";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
@@ -17,7 +17,7 @@ const Comments = () => {
 
   return (
     <main>
-      <div className="SingleItem">
+      <div className="SingleItems">
         <section>
           <AddComment article_id={article_id} setComments={setComments}/>
         </section>
@@ -25,7 +25,7 @@ const Comments = () => {
           <h1>Comments:</h1>
             {comments.map((comment) => {
                 return (
-                    <section key={comment.comment_id} className="SingleItem">
+                    <section key={comment.comment_id} className="SingleItems">
                      <p>{comment.body}</p>
                      <li>
                         <p> Votes: {comment.votes} | 

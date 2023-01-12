@@ -28,7 +28,8 @@ const TopicsList = () => {
                 return (
                     
                     <Link key={top.slug} to={`/topics/${top.slug}`}>
-                    <li key={top.slug}><span> |{top.slug}|    </span>  </li>
+                    <li key={top.slug}> <span> |
+                        {top.slug}|    </span>  </li>
                     </Link>
                    
                    

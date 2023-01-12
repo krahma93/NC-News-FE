@@ -7,17 +7,20 @@ import TopicsList from "./TopicsList";
 const AllArticles = ( )=> {
     const [articles, setArtcicles] = useState ([]);
     const [isLoading, setIsLoading] = useState(true)
+    const [sortBy, setSortBy] =useState('created_at')
+    const [orderBy, setOrderBy] =useState('asc')
+
     const {slug} = useParams()
 
 
     useEffect(()=> {
         setIsLoading(true)
-        getArticles(slug).then((res)=> {
+        getArticles(slug, sortBy, orderBy).then((res)=> {
             setArtcicles(res);
             setIsLoading(false)
         });
       
-}, [slug])
+}, [slug, sortBy, orderBy])
 
 if (isLoading) { 
     return <p>Loading...</p>
@@ -26,9 +29,21 @@ if (isLoading) {
 return (
 
     <main className="app" >
-      <h2>Articles</h2>
+      
       
       <TopicsList />
+      <section className="SingleItem">
+Filter    :    <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+          <option value="votes">Votes</option>
+          <option value="created_at">Date</option>
+          <option value="comment_count">Comment Count</option>
+        </select>
+        <section > <select value={orderBy} onChange={(e) => setOrderBy(e.target.value)}>
+          <option value="asc">Ascend</option>
+          <option value="desc">Descend</option>
+        </select> </section>
+
+      </section>
       <section className="AllArt">
 
       <ul className="AllArt">
