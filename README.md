@@ -47,3 +47,5 @@ The following technologies have been used to build the app:
 - HTML
 - CSS
 - Axios
+
+Link to Trello Board: https://trello.com/b/xFpweVJA/nc-news-fe 
