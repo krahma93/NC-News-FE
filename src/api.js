@@ -43,3 +43,14 @@ export const getTopics = () => {
         return res.data.topics
     })
 };
+
+export const deleteComment = (comment_id) => {
+    return marketApi.delete(`/comments/${comment_id}`)
+}
+
+export const getUsers = ()=> {
+    return marketApi.get('/users').then((res)=> {
+        return res.data.users
+    })
+}
+
