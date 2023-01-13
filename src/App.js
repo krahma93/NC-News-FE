@@ -25,6 +25,8 @@ function App() {
           <Route path="/articles/:article_id" element={<SingleArticle />} />
           <Route path="/topics/:slug" element={<AllArticles />} />
           <Route path='/LogIn' element={<LogIn />} />
+          <Route path="*" element={<h1> This page does not exist</h1>}/>
+
 
         </Route>
       </Routes>

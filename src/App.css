@@ -78,7 +78,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-size: larger;
   margin-top: 23px;
   }
+  .AllArts {
+    display: flexbox;
+    flex-wrap:wrap;
+    border: 1px solid black;
+align-content: center;
+width:  500px;
+height: 800px;
+justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+column-width: 3;
 
+    }
   .SingleItem {
     border: 1px solid black;
   width: 200px;

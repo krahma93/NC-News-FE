@@ -9,21 +9,33 @@ const AllArticles = ( )=> {
     const [isLoading, setIsLoading] = useState(true)
     const [sortBy, setSortBy] =useState('created_at')
     const [orderBy, setOrderBy] =useState('asc')
+    const [err, setErr] = useState(null)
 
     const {slug} = useParams()
 
 
     useEffect(()=> {
+        setErr(false)
         setIsLoading(true)
         getArticles(slug, sortBy, orderBy).then((res)=> {
+          if (res.length === 0) 
+            {setErr("Topic does not exist");
+            }
             setArtcicles(res);
             setIsLoading(false)
-        });
+        })
       
 }, [slug, sortBy, orderBy])
 
 if (isLoading) { 
     return <p>Loading...</p>
+}
+if (err) {
+  return (
+      <main>
+          <h1>{err}</h1>
+      </main>
+  )
 }
 
 return (
@@ -31,7 +43,7 @@ return (
     <main className="app" >
       
       
-      <TopicsList />
+      <TopicsList setErr={setErr} />
       <section className="SingleItem">
 Filter    :    <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
           <option value="votes">Votes</option>
@@ -46,6 +58,7 @@ Filter    :    <select value={sortBy} onChange={(e) => setSortBy(e.target.value)
       </section>
       <section className="AllArt">
 
+        <h2>Artciles</h2>
       <ul className="AllArt">
         {articles.map((article) => {
           return ( 
