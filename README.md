@@ -30,14 +30,14 @@ The project can be cloned running the following command: https://github.com/krah
 
 It can also be forked first by clicking in Fork on the right hand side on the top of the page.
 
-Minimum requirements
-Minimum version of Node.js: 16.13.1
+- Minimum requirements
+- Minimum version of Node.js: 16.13.1
 
 Installing required packages
-Run npm install to install all necessary dependencies.
+- Run "npm install" to install all necessary dependencies.
 
 
-Run npm start to launch with app
+Run "npm start" to launch with app
 
 ## Technologies
 
