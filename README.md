@@ -26,7 +26,7 @@ Interacting with the API, the app allows you to:
 ## Run the app locally
 
 Initial setup
-The project can be cloned running the following command: https://github.com/krahma93/NC-News-FE.git.
+The project can be cloned running the following command "git clone https://github.com/krahma93/NC-News-FE.git.
 
 It can also be forked first by clicking in Fork on the right hand side on the top of the page.
 
