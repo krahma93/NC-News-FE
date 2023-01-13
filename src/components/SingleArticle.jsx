@@ -9,15 +9,33 @@ import UpVote from "./UpVote";
 const SingleArticle = () => {
   const { article_id } = useParams();
   const [article, setSingleArticle] = useState({});
+  const [err, setErr] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
+    setIsLoading(false)
     getSingleArticle(article_id).then((newArticle) => {
       setSingleArticle(newArticle);
-    });
+    })
+    .catch((err)=> {
+        setErr('Sorry that article does not exist ')
+        setIsLoading(false)
+    })
   }, [article_id]);
 
-  // const{item_name} =item
+if (isLoading)
+return ( 
+    <main>
+        <p>Loading...</p>
+    </main> ) 
 
+if (err) {
+        return (
+            <main>
+                <h1>{err}</h1>
+            </main>
+        )
+    }
 
   return (
       <main>

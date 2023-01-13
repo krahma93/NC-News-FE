@@ -8,6 +8,7 @@ export const getArticles = (slug, sortBy, orderBy  )=> {
    return marketApi.get('/articles', {
     params: {topic: slug, sort_by: sortBy, order: orderBy}
    }).then((res) => {
+    console.log(res.data)
         return res.data.articles
     })
 }
