@@ -13,7 +13,7 @@ The aim of this project is to demonstrate some of the skills learnt during North
 - API requests and handling/displaying data,
 - A hosted version of the app can be found on: (https://kr-nc-news.netlify.app/),
 
-### Functionality
+## Functionality
 
 Interacting with the API, the app allows you to:
 
@@ -23,7 +23,7 @@ Interacting with the API, the app allows you to:
 - Post comments, comment on articles and delete comments as a signed in user
 -Vote on articles 
 
-### Run the app locally
+## Run the app locally
 
 Initial setup
 The project can be cloned running the following command: https://github.com/krahma93/NC-News-FE.git.
@@ -39,7 +39,7 @@ Run npm install to install all necessary dependencies.
 
 Run npm start to launch with app
 
-### Technologies
+## Technologies
 
 The following technologies have been used to build the app:
 
