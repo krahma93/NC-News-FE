@@ -2,22 +2,22 @@
 
 ## Intro
 
-This frontend application interacts with the following backend RESTful API: (https://github.com/krahma93/KR-portfolio-news.git)
+This frontend application interacts with the following backend API: (https://github.com/krahma93/KR-portfolio-news.git)
 
 The aim of this project is to demonstrate some of the skills learnt during Northcoders bootcamp frontend phase, mostly dedicated to React. Among these skills:
 
-React Virtual DOM
-React Lifecycle
-Optimistic rendering
-Error handling
-API requests and handling/displaying data
-A hosted version of the app can be found on: (https://kr-nc-news.netlify.app/)
+React Virtual DOM,
+React Lifecycle,
+Optimistic rendering,
+Error handling,
+API requests and handling/displaying data,
+A hosted version of the app can be found on: (https://kr-nc-news.netlify.app/),
 
 ### Functionality
 
 Interacting with the API, the app allows you to:
 
-See a list of articles
+See a list of articles,
 Filter articles by topic
 Sort articles by: date, votes and number of comments
 Post comments, comment on articles and delete comments as a signed in user
