@@ -38,7 +38,7 @@ if (err) {
     }
 
   return (
-      <main>
+      <main className="SingleItem">
       <ul className="SingleItems">
         <h2>{article.title}</h2>
         <h3> Description: {article.body}</h3>

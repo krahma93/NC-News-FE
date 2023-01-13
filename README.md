@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Northcoders News App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Intro
 
-## Available Scripts
+This frontend application interacts with the following backend RESTful API: (https://github.com/krahma93/KR-portfolio-news.git)
 
-In the project directory, you can run:
+The aim of this project is to demonstrate some of the skills learnt during Northcoders bootcamp frontend phase, mostly dedicated to React. Among these skills:
 
-### `npm start`
+React Virtual DOM
+React Lifecycle
+Optimistic rendering
+Error handling
+API requests and handling/displaying data
+A hosted version of the app can be found on: (https://kr-nc-news.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Functionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Interacting with the API, the app allows you to:
 
-### `npm test`
+See a list of articles
+Filter articles by topic
+Sort articles by: date, votes and number of comments
+Post comments, comment on articles and delete comments as a signed in user
+Vote on articles 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run the app locally
 
-### `npm run build`
+Initial setup
+The project can be cloned running the following command: https://github.com/krahma93/NC-News-FE.git.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It can also be forked first by clicking in Fork on the right hand side on the top of the page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Minimum requirements
+Minimum version of Node.js: 16.13.1
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Installing required packages
+Run npm install to install all necessary dependencies.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Run npm start to launch with app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The following technologies have been used to build the app:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React
+HTML
+CSS
+Axios

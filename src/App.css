@@ -111,7 +111,7 @@ column-width: 3;
 
   .SingleItems {
     border: 1px solid black;
-  width: 900px;
+  width: ;
   padding-left: 0px;
   border-radius: 5px;
   align-items: center;
@@ -123,7 +123,8 @@ column-width: 3;
   font-size: larger;
   margin-top: 33px;
   margin-bottom: 33px;
-  
+  display: flex;
+  flex-wrap: wrap;
   }
   .vote {
     border: 1px solid black;
